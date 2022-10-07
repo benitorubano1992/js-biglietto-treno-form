@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="center">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+        </header>
+    <div class="form-div">
+        <div class="row">
+            <div class="col">
+                <label for="username">Nome e Cognome</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="col">
+                <label for="numKm">Numero Km</label>
+                <input type="text" id="numeroKm" name="numeroKm">
+            </div>
+            <div class="col">
+                <label for="userAge">Fascia d'eta</label>
+                <select id="userAge">
+                    <option value=""></option>
+                    <option value="maggiorenne">maggiorenne</option>
+                    <option value="minorenne">&lt;18</option>
+                    <option value="anziano">&gt;65</option>
+                  </select>
+            
+            </div>
+        </div>
+            <div class="row-btn">
+            <button id="submit-btn" class="btn">Genera</button>    
+            <button id="reset-btn"class="btn" >Reset</button>
+            </div>
+        </div>
+    <!--biglietto section-->
+    <section class="ticket">
+        <h2 class="ticket-name">Biglietto</h2>
+        
+    <div class="form-div">
+        <div class="cont-ticket">
+            <h3>DETTAGLIO PASSAGGERI</h3>
+            <div class="row-ticket">
+                <div class="col-ticket-1">
+                    <h3>NOME PASSAGERO</h3>
+                    <p id="name-client"></p>
+                </div>
+                <div class="col-ticket-2">
+                    <div class="inner-row">
+                        <div class="col-inner">
+                            <p class="mb">Offerta</p>
+                            <p id="ticket-type">Biglietto Normale</p>
+                        </div>
+                        <div class="col-inner">
+                            <p class="mb">Carrozza</p>
+                            <span>5</span>
+                        </div>
+                        <div class="col-inner">
+                            <p class="mb">Codice Cp</p>
+                        
+                        <span id="code-ticket"></span>
+                        </div>
+                        <div class="col-inner">
+                            <p class="mb">Costo Biglietto</p>
+                        
+                            <span id="price-ticket"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+
+
+    
+    
+    
+    </div>
+
+    <script src="js/bonus.js"></script>
+</body>
+</html>
